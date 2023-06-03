@@ -1,5 +1,0 @@
-javac class.java - says if error exists
-java class - produces the required output
-
-javac -d . class.java - it saves the byte code file in the same directory
-javac -d .. class.java - it saves the byte code file in the previous directory
