@@ -1,4 +1,4 @@
-package OOPS;
+package com.OOPS;
 
 public class classAndObjects {
     public static void main(String[] args) {
