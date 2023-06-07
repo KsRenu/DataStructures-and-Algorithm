@@ -1,6 +1,7 @@
 package com.OOPS;
 
 public class Child extends Parent{
+    //sample child class
     String c1;
     String c2;
     String c3;
