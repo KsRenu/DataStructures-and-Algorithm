@@ -23,7 +23,7 @@ public class GrandChild extends Child{
 
 
     void display() {
-
+        System.out.println("Display in grandchild class");
         System.out.println("GC1: "+gc1);
         System.out.println("GC2: "+gc2);
         super.display();

@@ -20,6 +20,7 @@ public class Child extends Parent {
 
 
     void display(){
+        System.out.println("Display in child class");
         System.out.println("c1: "+c1);
         System.out.println("c2: "+c2);
 

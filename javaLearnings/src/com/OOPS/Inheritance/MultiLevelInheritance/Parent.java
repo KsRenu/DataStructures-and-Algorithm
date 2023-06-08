@@ -13,6 +13,7 @@ public class Parent {
 
 
     void display(){
+        System.out.println("Display in Parent class");
         System.out.println("P1: "+p1);
         System.out.println("P2: "+p2);
     }
