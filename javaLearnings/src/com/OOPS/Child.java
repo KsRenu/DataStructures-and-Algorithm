@@ -1,6 +1,8 @@
 package com.OOPS;
 
-public class Child extends Parent{
+import com.OOPS.Inheritance.MultiLevelInheritance.Parent;
+
+public class Child extends Parent {
     String c1;
     String c2;
     String c3;
