@@ -7,6 +7,13 @@ public class Main {
         c1.motherOccupation();
         c1.fatherSavings();
         c1.motherSavings();
+        c1.common();
+
+        Father F = new Child();
+        F.fatherOccupation();
+
+        //Child c2 = new Father();
+        //c2.motherSavings();
     }
 
 }

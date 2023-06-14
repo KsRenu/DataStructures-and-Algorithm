@@ -4,4 +4,8 @@ public interface Father {
 
     void fatherOccupation();
     void fatherSavings();
+
+    void common();
+
+
 }

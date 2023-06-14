@@ -25,4 +25,9 @@ public class Child implements Father, Mother {
         System.out.println("Mother Savings");
 
     }
+
+    @Override
+    public void common(){
+        System.out.println("From common");
+    }
 }
