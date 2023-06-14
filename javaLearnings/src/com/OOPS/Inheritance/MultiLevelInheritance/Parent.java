@@ -17,4 +17,9 @@ public class Parent {
         System.out.println("P1: "+p1);
         System.out.println("P2: "+p2);
     }
+
+    public static void main(String[] args) {
+        Parent x = new Parent();
+        System.out.println(x.getClass());
+    }
 }
