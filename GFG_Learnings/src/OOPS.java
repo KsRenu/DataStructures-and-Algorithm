@@ -1,9 +1,13 @@
-public class OOPS {
+import com.sun.jdi.PathSearchingVirtualMachine;
 
+public class OOPS {
+    public static void main(String[] args) {
+        System.out.println("Overview of OOPS");
+    }
 }
 
 
-
+/*
 //abstract class
 abstract class GFG_abstract{
     //abstract methods declaration
@@ -45,7 +49,7 @@ class B extends A_inheritance{ //Inherits parent class methods
 // 3 methods with same name,
 // yet the program will
 // compile & run successfully
-public class Sum_polymorphism {
+ class Sum_polymorphism {
 
     // Overloaded sum().
     // This sum takes two int parameters
@@ -77,4 +81,6 @@ public class Sum_polymorphism {
         System.out.println(s.sum(10.5, 20.5));
     }
 }
+
+ */
 
