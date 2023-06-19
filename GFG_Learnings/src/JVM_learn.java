@@ -1,4 +1,4 @@
-public class JVM {
+public class JVM_learn {
 
         public static void main(String[] args)
         {
@@ -7,7 +7,7 @@ public class JVM {
             System.out.println(String.class.getClassLoader());
 
             // JVM class is loaded by Application loader
-            System.out.println(JVM.class.getClassLoader());
+            System.out.println(JVM_learn.class.getClassLoader());
         }
 
 }
