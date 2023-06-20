@@ -1,0 +1,17 @@
+1.Department of staffs remains unchanged
+
+
+
+
+To be implemented:
+1. For every year students
+2. Exam Session for FN and AN
+3.In students, include subjectCode variable.
+4. Regular/Arrears feature to be implemented.
+
+
+
+
+Steps:
+Student class: declare var, initialise var inside constructors, look for getters and setters method if the var needs to be changes dynamically
+Teacher Class: declare, initialise, set and get methods;
