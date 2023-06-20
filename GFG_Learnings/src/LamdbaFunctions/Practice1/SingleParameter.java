@@ -1,4 +1,4 @@
-package LamdbaFunctions;
+package LamdbaFunctions.Practice1;
 
 interface test2{
     void print(int a);
