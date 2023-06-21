@@ -2,7 +2,7 @@ public class why2_thisKeyword {
     // Java code for using this as an argument in constructor
 // call
 // Class with object of Class B as its data member
-    class A {
+    static class A {
         B obj;
 
         // Parameterized constructor with object of B
@@ -16,7 +16,7 @@ public class why2_thisKeyword {
         }
     }
 
-    class B {
+    static class B {
         int x = 5;
 
         // Default Constructor that create an object of A

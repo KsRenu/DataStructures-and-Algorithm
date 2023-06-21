@@ -30,7 +30,7 @@ public class MultipleInheritance {
 
     // Main class
 // Implementation class code
-    class TestClass implements PI1, PI2 {
+    static class TestClass implements PI1, PI2 {
 
         // Overriding default show method
         @Override
