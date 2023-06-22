@@ -1,7 +1,13 @@
-package Workout_3_addingModules;
+package Workout_final_OOPS;
 
+import java.util.ArrayList;
 
-public class User {
+interface show{
+    public void display(String id, String name, String dept);
+    public  void display(ArrayList<String[]> studentDetailsList, String id);
+}
+
+public  class User implements show{
     private String id;
     private String name ;
     public String dept;
@@ -20,8 +26,9 @@ public class User {
                 " Dept: "+ dept);
     }
 
-
-
+    @Override
+    public  void display(ArrayList<String[]> studentDetailsList, String id) {
+    }
 
 
     public String getId() {
