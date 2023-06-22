@@ -1,4 +1,4 @@
-package Workout_3_addingOOPS;
+package Workout_3_addingModules;
 
 import java.util.ArrayList;
 import java.util.Scanner;
