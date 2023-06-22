@@ -1,4 +1,4 @@
-package ExamHallSeatingAllocation;
+package Workout_1_ExamHallSeatingAllocation;
 
 /**
  * this class is responsible for tracking student details.

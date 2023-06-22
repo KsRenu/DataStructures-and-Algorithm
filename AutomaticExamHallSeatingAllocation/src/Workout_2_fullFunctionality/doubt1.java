@@ -1,4 +1,4 @@
-package EHSA;
+package Workout_2_fullFunctionality;
 
 import java.util.ArrayList;
 import java.util.List;

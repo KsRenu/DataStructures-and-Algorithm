@@ -1,4 +1,4 @@
-package ExamHallSeatingAllocation;
+package Workout_1_ExamHallSeatingAllocation;
 
 import java.util.List;
 

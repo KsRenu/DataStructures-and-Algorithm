@@ -1,4 +1,4 @@
-package EHSA;
+package Workout_2_fullFunctionality;
 
 public class Student extends User{
     private String yr;

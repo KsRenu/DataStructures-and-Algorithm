@@ -1,4 +1,4 @@
-package EHSA;
+package Workout_2_fullFunctionality;
 
 interface show{
     public default void display() {}

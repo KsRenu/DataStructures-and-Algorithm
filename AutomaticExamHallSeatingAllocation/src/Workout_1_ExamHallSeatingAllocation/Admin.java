@@ -1,4 +1,4 @@
-package ExamHallSeatingAllocation;
+package Workout_1_ExamHallSeatingAllocation;
 
 /**
  * This class is resposible for tracking the admin details
