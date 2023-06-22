@@ -1,9 +1,9 @@
 package EHSA;
 
 public class Student extends User{
-    private int yr;
+    private String yr;
 
-    public Student(int id, String name, String dept, int yr) {
+    public Student(String id, String name, String dept, String yr) {
         super(id, name, dept);
         this.yr = yr;
     }
@@ -13,11 +13,11 @@ public class Student extends User{
 
     }
 
-    public int getYr() {
+    public String getYr() {
         return yr;
     }
 
-    public void setYr(int yr) {
+    public void setYr(String yr) {
         this.yr = yr;
     }
 }

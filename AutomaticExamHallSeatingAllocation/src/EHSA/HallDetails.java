@@ -3,31 +3,46 @@ package EHSA;
 import java.util.ArrayList;
 
 public class HallDetails {
+    //private String id;
     private int hallCapacity = 36;
+    private ArrayList<String[]> hallDetailsList = new ArrayList<>();
 
-    public ArrayList<Integer> hall() {
+    private ArrayList<String[]> studentDetailsList;
+    //public HallDetails(ArrayList<String[]> studentDetailsList,String id) {
+      public HallDetails(ArrayList<String[]> studentDetailsList) {
+        this.studentDetailsList = studentDetailsList;
+        //this.id = id;
+    }
+
+    public ArrayList<String[]> hall(ArrayList<String[]> studentDetailsList) {
         ArrayList<Integer> hallNo = new ArrayList<>();
         hallNo.add(1);
         hallNo.add(2);
         hallNo.add(3);
-        place(hallNo);
-        return hallNo;
+        ArrayList<String[]> place = place(hallNo,studentDetailsList);
+        return place;
     }
-    int x,y = 0;
-    public int[] place(ArrayList<Integer> hallNo){
+    int x,hallNum,benchpostion = 0;
+    public ArrayList<String[]> place(ArrayList<Integer> hallNo,ArrayList<String[]> studentDetailsList){
+        String[] position = new String[3];
+        while(hallNum<hallNo.size()) {
+            hallNum += 1;
+            //System.out.println("Students in hall "+hallNo.get(hallNum-1)+" are: ");
+            benchpostion=1;
 
-        int[] position = new int[36];
-        while(y<hallNo.size()) {
-            y += 1;
-            x=0;
-            System.out.println("Students in hallNo "+y+" are: ");
-            while (x < 36) {
-                System.out.println(x);
-                x++;
+            while (x < hallCapacity) {
+                position = new String[]{String.valueOf(hallNum), String.valueOf(benchpostion),studentDetailsList.get(x)[0]};
+                //System.out.println(hallNo.get(hallNum-1)+"_"+benchpostion+"_"+studentDetailsList.get(x)[0]);
+                benchpostion+=1;
+                hallDetailsList.add(position);
+                x+=1;
             }
+            hallCapacity+=36;
+
 
         }
-        return position;
+
+        return hallDetailsList;
 
     }
 

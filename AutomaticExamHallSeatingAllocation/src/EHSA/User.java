@@ -4,11 +4,11 @@ interface show{
     public default void display() {}
 }
 public class User implements show{
-    private int id;
+    private String id;
     private String name ;
     public String dept;
 
-    public User(int id, String name, String dept) {
+    public User(String id, String name, String dept) {
         this.id = id;
         this.name = name;
         this.dept = dept;
@@ -23,11 +23,11 @@ public class User implements show{
 
 
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
