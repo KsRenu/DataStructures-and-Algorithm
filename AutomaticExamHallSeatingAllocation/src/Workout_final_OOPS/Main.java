@@ -49,15 +49,15 @@ public class Main {
             System.out.println("1. Retrieve students data\n" +
                     "2.Insert student detail\n" +
                     "3.Update student detail\n" +
-                    "4.Delete a student\n");
+                    "4.Delete a student");
             int action = in.nextInt();
             if(action==1){
                 System.out.println("1.Retrieving details");
-                int data = in.nextInt();
-                if(data==1) {
+                //int data = in.nextInt();
+                //if(data==1) {
                     System.out.println("Details: ");
                     Student.display(studentDetailsList);
-                }
+                //}
             }
             else if (action==2) {
                 System.out.println("How many students you want to add: ");
@@ -67,10 +67,10 @@ public class Main {
             else if (action == 3) {
                 System.out.println("Updating data");
                 System.out.println("What detail you want to update: name/dept/yr");
+                in.nextLine();
                 String update = in.nextLine();
                 System.out.println("Enter student's Id: ");
                 String studId = in.nextLine();
-                in.nextLine();
                 u1.update(studentDetailsList,studId,update);
             }
             else if (action==4) {
