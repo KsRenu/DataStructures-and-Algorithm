@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public  class Student extends User implements show {
     private String yr;
 
+    /***
+     * It's a inner class as students should not know the algorithm/logic behind the allocation, so they can't
+     * predict their plaes earlier
+     */
     private static class HallDetails {
         private int hallCapacity = 36;
         private ArrayList<String[]> hallDetailsList = new ArrayList<>();
@@ -14,6 +18,11 @@ public  class Student extends User implements show {
             this.studentDetailsList = studentDetailsList;
         }
 
+        /***
+         * For demo, assuming there are only 3 halls where each hall has 36 places in it.
+         * @param studentDetailsList Details of all the students
+         * @return returns the arraylist of arrays of hallNo,benchNo and rollNo of every student
+         */
         public ArrayList<String[]> hall(ArrayList<String[]> studentDetailsList) {
             ArrayList<Integer> hallNo = new ArrayList<>();
             hallNo.add(1);
@@ -23,6 +32,13 @@ public  class Student extends User implements show {
             return place;
         }
         int x,hallNum,benchpostion = 0;
+
+        /***
+         * Allocating the hall and bench position to all the students
+         * @param hallNo List of available halls
+         * @param studentDetailsList details of all the students
+         * @return returns the arraylist of arrays of hallNo,benchNo and rollNo of every student
+         */
         public ArrayList<String[]> place(ArrayList<Integer> hallNo,ArrayList<String[]> studentDetailsList){
             String[] position = new String[3];
             while(hallNum<hallNo.size()) {
@@ -46,6 +62,12 @@ public  class Student extends User implements show {
         super(id, name, dept);
         this.yr = yr;
     }
+
+    /***
+     * Displaying the allocated place of the particular student
+     * @param studentDetailsList Details of all the students
+     * @param id Id of the student whose position need to be known
+     */
     public  void display(ArrayList<String[]> studentDetailsList, String id){
         HallDetails h = new HallDetails(studentDetailsList);
         ArrayList<String[]> hall = h.hall(studentDetailsList);
@@ -56,6 +78,11 @@ public  class Student extends User implements show {
         }
 
     }
+
+    /***
+     * Displaying the allocated details of all the students
+     * @param studentDetailsList Details of all the students
+     */
     public static void display(ArrayList<String[]>studentDetailsList){
         HallDetails h = new HallDetails(studentDetailsList);
         ArrayList<String[]> hall = h.hall(studentDetailsList);

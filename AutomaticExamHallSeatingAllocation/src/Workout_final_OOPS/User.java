@@ -19,6 +19,13 @@ public  class User implements show{
         this.dept = dept;
         this.value = value;
     }
+
+    /***
+     * Collecting and Printing the current user details
+     * @param id Id of the user
+     * @param name Name of the user
+     * @param dept department of the user.
+     */
     public void display(String id, String name, String dept){
         System.out.println("Accessing user details: " +
                 " Id: "+id+
