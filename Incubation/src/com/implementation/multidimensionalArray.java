@@ -1,3 +1,5 @@
+package com.implementation;
+
 import java.util.*;
 public class multidimensionalArray {
     public static void main(String[] args) {

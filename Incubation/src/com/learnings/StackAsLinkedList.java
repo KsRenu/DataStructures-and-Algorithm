@@ -1,4 +1,4 @@
-// Java Code for Linked List Implementation
+package com.learnings;// Java Code for Linked List Implementation
 
 public class StackAsLinkedList {
 
@@ -32,7 +32,7 @@ public class StackAsLinkedList {
             root = newNode;
             newNode.next = temp;
         }
-        System.out.println(data + " pushed to stack");
+        System.out.println(data + " pushed to com.learnings.stack");
     }
 
     public int pop()
@@ -70,7 +70,7 @@ public class StackAsLinkedList {
         sll.push(30);
 
         System.out.println(sll.pop()
-                + " popped from stack");
+                + " popped from com.learnings.stack");
 
         System.out.println("Top element is " + sll.peek());
     }

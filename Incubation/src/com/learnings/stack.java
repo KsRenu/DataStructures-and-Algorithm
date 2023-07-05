@@ -1,5 +1,7 @@
+package com.learnings;
+
 public class stack {
-    /* Java program to implement basic stack
+    /* Java program to implement basic com.learnings.stack
 operations */
     //class Stack {
         static final int MAX = 1000;
@@ -23,7 +25,7 @@ operations */
             }
             else {
                 a[++top] = x;
-                System.out.println(x + " pushed into stack");
+                System.out.println(x + " pushed into com.learnings.stack");
                 return true;
             }
         }
@@ -67,9 +69,9 @@ operations */
             s.push(10);
             s.push(20);
             s.push(30);
-            System.out.println(s.pop() + " Popped from stack");
+            System.out.println(s.pop() + " Popped from com.learnings.stack");
             System.out.println("Top element is :" + s.peek());
-            System.out.print("Elements present in stack :");
+            System.out.print("Elements present in com.learnings.stack :");
             s.print();
         }
 
