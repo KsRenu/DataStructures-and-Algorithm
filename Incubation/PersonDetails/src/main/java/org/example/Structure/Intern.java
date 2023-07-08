@@ -24,4 +24,7 @@ public class Intern extends Person{
     public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
+    public String toString() {
+        return "fname: "+ getFname()+ "\nlname: " + getLname()+ "\nAge: " + getAge()+"\nAmt: " + getAmount()+ "\ntype: " + getType()+"\nrole: "+ getStartDate() + "\ndept: " + getEndDate() ;
+    }
 }

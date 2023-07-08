@@ -6,17 +6,13 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 
 
-        import java.io.FileNotFoundException;
-        import java.io.FileOutputStream;
-        import java.io.OutputStream;
-
         import javax.json.Json;
         import javax.json.JsonArrayBuilder;
         import javax.json.JsonObject;
         import javax.json.JsonObjectBuilder;
         import javax.json.JsonWriter;
 
-import org.example.Structure.Person ;
+//import org.example.Structure.Person ;
 import org.example.Structure.Intern ;
 import org.example.Structure.Manager ;
 import org.example.Structure.Employee ;
@@ -27,17 +23,16 @@ public class JSONWriter {
 
         Employee emp = createEmployee();
 
-        JsonObjectBuilder empBuilder = Json.createObjectBuilder();
-        JsonObjectBuilder addressBuilder = Json.createObjectBuilder();
-        JsonArrayBuilder phoneNumBuilder = Json.createArrayBuilder();
+        JsonObjectBuilder employeeBuilder = Json.createObjectBuilder();
+        JsonObjectBuilder internBuilder = Json.createObjectBuilder();
 
 
 
-        empBuilder.add("id", emp.getId())
+        employeeBuilder.add("id", emp.getId())
                 .add("role", emp.getRole());
 
 
-        JsonObject empJsonObject = empBuilder.build();
+        JsonObject empJsonObject = employeeBuilder.build();
 
         System.out.println("Employee JSON String\n"+empJsonObject);
 

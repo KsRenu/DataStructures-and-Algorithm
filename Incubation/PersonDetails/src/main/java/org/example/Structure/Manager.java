@@ -12,8 +12,8 @@ public class Manager extends Person{
         this.dept = dept;
     }
 
-    public String[] getReportingTeam() {
-        return reportingTeam;
+    public String getReportingTeam() {
+        return reportingTeam.toString();
     }
 
     public void setReportingTeam(String[] reportingTeam) {
@@ -26,5 +26,8 @@ public class Manager extends Person{
 
     public void setDept(String dept) {
         this.dept = dept;
+    }
+    public String toString() {
+        return "fname: "+ getFname()+ "\nlname: " + getLname()+ "\nAge: " + getAge()+"\nAmt: " + getAmount()+ "\ntype: " + getType()+"\nRepoting team members: "+ getReportingTeam() + "\ndept: " + dept ;
     }
 }

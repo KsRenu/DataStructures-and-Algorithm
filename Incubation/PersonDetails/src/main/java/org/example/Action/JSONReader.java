@@ -11,14 +11,14 @@ import javax.json.JsonObject;
 import javax.json.JsonReader;
 import javax.json.JsonValue;
 
-import org.example.Structure.Person ;
+//import org.example.Structure.Person ;
 import org.example.Structure.Intern ;
 import org.example.Structure.Manager ;
 import org.example.Structure.Employee ;
 
 public class JSONReader {
 
-    public static final String JSON_FILE="employee.txt";
+    public static final String JSON_FILE="employees.json";
 
     public static void main(String[] args) throws IOException {
         InputStream fis = new FileInputStream(JSON_FILE);

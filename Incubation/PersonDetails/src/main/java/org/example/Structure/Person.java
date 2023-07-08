@@ -1,6 +1,6 @@
 package org.example.Structure;
 
-public class Person {
+abstract class Person {
     private int id;
     private String fname;
     private String lname;

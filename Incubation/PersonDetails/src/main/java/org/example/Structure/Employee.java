@@ -26,4 +26,7 @@ public class Employee extends Person{
     public void setDept(String dept) {
         this.dept = dept;
     }
+    public String toString() {
+        return "fname: "+ getFname()+ "\nlname: " + getLname()+ "\nAge: " + getAge()+"\nAmt: " + getAmount()+ "\ntype: " + getType()+"\nrole: "+ role + "\ndept: " + dept ;
+    }
 }
