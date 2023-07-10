@@ -6,8 +6,8 @@ public class Manager extends Person{
     private String dept;
 
 
-    public Manager(int id, String fname, String lname,int age,String type, double amount, String[] reportingTeam, String dept) {
-        super(id, fname, lname, age,type, amount);
+    public Manager(String type,int id, String fname, String lname,int age, double amount, String[] reportingTeam, String dept) {
+        super(type,id, fname, lname, age, amount);
         this.reportingTeam = reportingTeam;
         this.dept = dept;
     }

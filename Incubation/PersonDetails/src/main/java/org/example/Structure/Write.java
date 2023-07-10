@@ -5,22 +5,22 @@ import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
 import java.util.ArrayList;
 
-public class Main {
+public class Write {
     public static ArrayList<Person> createPerson(){
         ArrayList<Person>  persons = new ArrayList<>();
-        persons.add(new Intern(2,"fname","lname",10,"intern",199.098,"01/01/01","01/01/01"));
-        persons.add(new Employee(1,"fname","lname",10,"employee",199.098,"marketing","add and mark"));
-        persons.add(new Manager(3,"fname","lname",10,"manager",199.098,new String[]{"name1","name2"},"sales"));
+        persons.add(new Intern("intern",2,"fname","lname",10,199.098,"01/01/01","01/01/01"));
+        persons.add(new Employee("employee",1,"fname","lname",10,199.098,"marketing","add and mark"));
+        persons.add(new Manager("manager",3,"fname","lname",10,199.098,new String[]{"name1","name2"},"sales"));
 
-        Intern i1 = new Intern(2,"fname","lname",10,"intern",199.098,"01/01/01","01/01/01");
-        Employee e1 = new Employee(1,"fname","lname",10,"employee",199.098,"marketing","add and mark");
-        Manager m1 = new Manager(3,"fname","lname",10,"manager",199.098,new String[]{"name1","name2"},"sales");
+        Intern i1 = new Intern("intern",2,"fname","lname",10,199.098,"01/01/01","01/01/01");
+        Employee e1 = new Employee("employee",1,"fname","lname",10,199.098,"marketing","add and mark");
+        Manager m1 = new Manager("manager",3,"fname","lname",10,199.098,new String[]{"name1","name2"},"sales");
 
         return persons;
     }
 
     public static Employee createEmployee(){
-        Employee e1 = new Employee(1,"fname","lname",10,"employee",199.098,"marketing","add and mark");
+        Employee e1 = new Employee("employee",1,"fname","lname",10,199.098,"marketing","add and mark");
         e1.setId(1);
         e1.setFname("fname");
         e1.setLname("lname");
@@ -32,11 +32,11 @@ public class Main {
         return e1;
     }
     public static Intern createIntern(){
-        Intern i1 = new Intern(2,"fname","lname",10,"intern",199.098,"01/01/01","01/01/01");
+        Intern i1 = new Intern("intern",2,"fname","lname",10,199.098,"01/01/01","01/01/01");
         return i1;
     }
     public static Manager createManager(){
-        Manager m1 = new Manager(3,"fname","lname",10,"manager",199.098,new String[]{"name1","name2"},"sales");
+        Manager m1 = new Manager("manager",3,"fname","lname",10,199.098,new String[]{"name1","name2"},"sales");
         return m1;
     }
     public static void main(String[] args) {

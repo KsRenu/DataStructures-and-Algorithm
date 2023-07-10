@@ -39,9 +39,9 @@
     "age":"10",
     "dept":"dept1",
     "reportingTeam":[
-  "name1",
-  "name2"
-  ],
+      "name1",
+      "name2"
+    ],
     "salary":"1000"
   }
 ]

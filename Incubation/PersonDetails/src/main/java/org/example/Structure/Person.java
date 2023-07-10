@@ -1,14 +1,17 @@
 package org.example.Structure;
 
-abstract class Person {
+public class Person {
     private int id;
     private String fname;
     private String lname;
     private int age;
     private String type;
+    private Employee employee;
+    private Intern intern;
+    private Manager manager;
     private double amount;
 
-    public Person(int id, String fname, String lname, int age,String type, double amount) {
+    public Person(String type,int id, String fname, String lname, int age, double amount) {
         this.id = id;
         this.fname = fname;
         this.lname = lname;
@@ -63,5 +66,29 @@ abstract class Person {
 
     public void setAmount(double amount) {
         this.amount = amount;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+    public Intern getIntern() {
+        return intern;
+    }
+
+    public void setIntern(Intern intern) {
+        this.intern = intern;
+    }
+
+    public Manager getManager() {
+        return manager;
+    }
+
+    public void setManager(Manager manager) {
+        this.manager = manager;
     }
 }
